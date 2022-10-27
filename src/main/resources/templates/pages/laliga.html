@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Liga</title>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/style/table.css}" />
+    <link href='http://fonts.googleapis.com/css?family=Lucida Sans Unicode' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Kurale' rel='stylesheet'>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="top-menu">
+            <ul class="menu-main">
+                <li><a th:href = "@{/apl}">Английская премьер-лига</a></li>
+                <li><a th:href = "@{/liga1}">Лига 1</a></li>
+                <li><a th:href = "@{/bundesliga}">Бундеслига</a></li>
+                <li><a th:href = "@{/seriaA}">Серия А</a></li>
+                <li><a th:href = "@{/rfl}">Российская премьер-лига</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="ter">
+    <div class="container">
+        <table>
+            <tr><th colspan="9" class="ren">ЛА ЛИГА</th></tr>
+            <tr>
+                <th>№</th>
+                <th>Team</th>
+                <th>Matches</th>
+                <th>Wins</th>
+                <th>Draws</th>
+                <th>Defeats</th>
+                <th>Goals Scored</th>
+                <th>Missed Goals</th>
+                <th>Points</th>
+            </tr>
+            <tr th:each = "team: ${teams}">
+                <td th:text = "${team.getPlace()}"></td>
+                <td th:text = "${team.getTeam()}"></td>
+                <td th:text = "${team.getMatches()}"></td>
+                <td th:text = "${team.getWins()}"></td>
+                <td th:text = "${team.getDraws()}"></td>
+                <td th:text = "${team.getDefeats()}"></td>
+                <td th:text = "${team.getScoredGoals()}"></td>
+                <td th:text = "${team.getMissedGoals()}"></td>
+                <td th:text = "${team.getPoints()}"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

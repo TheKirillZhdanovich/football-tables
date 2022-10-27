@@ -1,0 +1,117 @@
+body{
+    background-image: url(../photos/background.jpg);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 400px 400px;
+    grid-gap: 1em;
+    padding: 100px 150px;
+    gap: 50px;
+    overflow: hidden;
+}
+.grid > *{
+    background-color: rgba(247, 145, 50, 0.6);
+    color: black;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 15px 15px 5px rgba(38, 37, 37, 0.744) ;
+
+}
+
+.s1{
+    background: url(../photos/rpl22.jpg) no-repeat;
+    background-size: cover;
+}
+.s2{
+    background: url(../photos/bnd99.jpg) no-repeat;
+    background-size: cover;
+}
+.s3{
+    background: url(../photos/apl4.jpg) no-repeat;
+    background-size: cover;
+}
+.s4{
+    background: url(../photos/Liga144.jpg) no-repeat;
+    background-size: cover;
+}
+.s5{
+    background-image: url(../photos/laliga999.jpg);
+    background-size: cover;
+}
+.s6{
+    background: url(../photos/sra899.jpg) no-repeat;
+    background-size: cover;
+}
+
+.s1:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.s2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.s3:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.s4:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.s5:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.s6:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.s1 a{
+    display: block;
+    width: 290px;
+    height: 350px;
+
+}
+.s2 a{
+    display: block;
+    width: 290px;
+    height: 350px;
+
+}
+.s3 a{
+    display: block;
+    width: 290px;
+    height: 350px;
+
+}
+.s4 a{
+    display: block;
+    width: 290px;
+    height: 350px;
+
+}
+.s5 a{
+    display: block;
+    width: 290px;
+    height: 350px;
+
+}
+.s6 a{
+    display: block;
+    width: 290px;
+    height: 350px;
+
+}
+

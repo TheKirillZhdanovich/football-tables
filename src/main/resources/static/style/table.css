@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main{
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    background-color: rgba(247, 145, 50, 0.493);
+}
+.menu-main li{
+    display: inline-block;
+}
+.menu-main li:after{
+    content: "|";
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+}
+.menu-main li:last-child:after {
+    content: none;
+}
+.menu-main a{
+    text-decoration: none;
+    font-family: "Kurale", Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited{
+    color: #0b0b0b;
+}
+.menu-main a.current, .menu-main a:hover{
+    color: #f20000;
+}
+.menu-main a:before,
+.menu-main a:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -3px;
+    left: 50%;
+    background-color: #f20000;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before{
+    left: 0;
+}
+.menu-main a:hover:after, .menu-main .current:after{
+    right: 0;
+}
+.logo{
+    width: 80px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 5px 5px;
+}
+@media (max-width: 550px) {
+    .menu-main{
+        padding-top: 0;
+    }
+    .menu-main li{
+        display: block;
+    }
+    .menu-main li:after{
+        content: none;
+    }
+    .menu-main a{
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}
+table{
+    font-family: "Kurale", Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    color: #0b0b0b;
+    background-color: #e3d8b9;
+    border: 16px solid #e3d8b9;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+th{
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+td{
+    background-color: rgba(247, 145, 50, 0.358);
+    padding: 10px;
+    font-size: 20px;
+}
+.ren{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-top: 5px solid #b92e00;
+    border-bottom: 5px solid #b92e00;
+    font-family: "Kurale", Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-image: url(../photos/background.jpg)
+}
